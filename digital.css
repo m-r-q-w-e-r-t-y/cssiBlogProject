@@ -1,0 +1,179 @@
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Blinker', sans-serif;
+*/
+
+.passage
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  line-height: 1.5;
+  padding-top: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.date
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rightArticles
+{
+  margin-top: 13px;
+  padding-top: 13px;
+  padding-bottom: 50px;
+  width: 70%;
+}
+.images
+{
+  margin-left: -100px;
+  margin-right: auto;
+  padding-top: 10px;
+  height: 350px;
+}
+.header
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+#mainHeader
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.defaultButtons
+{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin-bottom: 50px;
+}
+
+#webName
+{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #190e1c;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+}
+#aboutButton
+{
+  grid-area: abutton;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #190e1c;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+}
+#photosButton
+{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #190e1c;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+}
+#header
+{
+  grid-area: head;
+  color: white;
+  font-size: 350%;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: 190px;
+  width: 70%;
+}
+#subheader
+{
+  grid-area: head;
+  color: white;
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+  margin-right: auto;
+  margin-left: 190px;
+  width: 70%;
+}
+#bottomBlock
+{
+  grid-area: footer;
+}
+
+#searchBox
+{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #190e1c;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+}
+
+.headingBorder
+{
+/*  position: relative; /* for the child pseudo-elements
+  /* negative offset = section padding
+  margin: 0 -30px;
+  /* add back section padding value
+  padding: 0.25rem 30px;
+  background: #0F0E16;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas:
+    "main search abutton pbutton"
+    "head head head head"
+    "footer footer footer footer";
+  background: #0F0E16;
+  margin: -10px -10px;
+}
+
+#gridSectionP
+{
+  display: grid;
+  grid-template-columns: 50px [main-start] 1fr [main-end] 600px;
+  padding-top: 100px;
+  margin-bottom: 200px;
+  /*grid-template-rows: 100px [main-start] 1fr [main-end] 100px;*/
+}
