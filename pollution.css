@@ -6,248 +6,42 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Blinker', sans-serif;
 */
 
-.passage
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  line-height: 1.5;
-  padding-top: 10px;
-  font-family: 'Roboto Condensed', sans-serif;
+header {
+    padding: 10px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 20px;
+  }
+
+.boxed {
+  border: 1px solid green ;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-
-.date
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  font-family: 'Roboto', sans-serif;
-}
-
-.rightArticles
-{
-  margin-top: 49px;
-  padding-top: 13px;
-  padding-bottom: 50px;
-  width: 70%;
-}
-.images
-{
-  margin-left: -100px;
-  margin-right: auto;
-  padding-top: 10px;
-  margin-bottom: -52px;
-  height: 350px;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-}
-.header
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-
-#mainHeader
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  font-family: 'Roboto', sans-serif;
-}
-
-.defaultButtons
-{
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  margin-bottom: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  background-color: lightgreen;
+  padding: 30px;
 }
-
-#webName
-{
-  grid-area: pbutton;
-  display: block;
-  width: 100%;
-  border: none;
-  padding: 20px 28px;
-  font-size: 16px;
-  cursor: pointer;
+.grid-container > div {
+  background-color: lightblue;
   text-align: center;
-  background-color: #190e1c;
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  border-bottom: solid white;
-}
-#aboutButton
-{
-  grid-area: abutton;
-  display: block;
-  width: 100%;
-  border: none;
-  background-color: #190e1c;
-  padding: 20px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  border-bottom: solid white;
-}
-#photosButton
-{
-  grid-area: pbutton;
-  display: block;
-  width: 100%;
-  border: none;
-  padding: 20px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #190e1c;
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  border-bottom: solid white;
-}
-#header
-{
-  grid-area: head;
-  color: white;
-  font-size: 350%;
-  font-family: 'Oswald', sans-serif;
-  margin-top: 100px;
-  margin-right: auto;
-  margin-left: 190px;
-  width: 70%;
-}
-#subheader
-{
-  grid-area: head;
-  color: white;
-  font-size: 100%;
-  font-family: 'Roboto', sans-serif;
-  margin-right: auto;
-  margin-left: 190px;
-  width: 70%;
-}
-#bottomBlock
-{
-  grid-area: footer;
+  border-radius: 25px;
+  padding: 70px 0;
+  font-size: 10px;
 }
 
-#searchBox
-{
-  grid-area: pbutton;
-  display: block;
-  width: 100%;
-  border: none;
-  padding: 20px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #190e1c;
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  border-bottom: solid white;
+#first-pic{
+  background: url("https://media.giphy.com/media/sA2zyKbPXKX1S/giphy.gif");
 }
 
-.headingBorder
-{
-/*  position: relative; /* for the child pseudo-elements
-  /* negative offset = section padding
-  margin: 0 -30px;
-  /* add back section padding value
-  padding: 0.25rem 30px;
-  background: #0F0E16;
-  padding-top: 300px;
-  padding-bottom: 300px;
-  */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 3fr 1fr;
-  grid-template-areas:
-    "main search abutton pbutton"
-    "head head head head"
-    "footer footer footer footer";
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
-  background: #0F0E16;
-  margin: -10px -10px;
-}
-.paragraphs
-{
-  background-color: white;
-  /*margin-left: 500px;
-  margin-right:500px;
-  */
-  box-shadow: 3px 3px 3px -3px lightgrey;
-  box-shadow: 1px 1px 3px 3px lightgrey;
-  margin-top: 75px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: 70%;
-  margin-left: 45px;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
+#second-pic{
+  background: url("https://media.giphy.com/media/sA2zyKbPXKX1S/giphy.gif");
 }
 
-
-#gridSectionP
-{
-  display: grid;
-  grid-template-columns: 50px [main-start] 1fr [main-end] 600px;
-  padding-top: 100px;
-  margin-bottom: 200px;
-
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
+#third-pic{
+  background: url("https://media.giphy.com/media/sA2zyKbPXKX1S/giphy.gif");
 }
-  /*grid-template-rows: 100px [main-start] 1fr [main-end] 100px;*/
-  @keyframes fadein {
-      from {
-          opacity:0;
-      }
-      to {
-          opacity:1;
-      }
-  }
-  @-moz-keyframes fadein { /* Firefox */
-      from {
-          opacity:0;
-      }
-      to {
-          opacity:1;
-      }
-  }
-  @-webkit-keyframes fadein { /* Safari and Chrome */
-      from {
-          opacity:0;
-      }
-      to {
-          opacity:1;
-      }
-  }
-  @-o-keyframes fadein { /* Opera */
-      from {
-          opacity:0;
-      }
-      to {
-          opacity: 1;
-      }
-  }
-
