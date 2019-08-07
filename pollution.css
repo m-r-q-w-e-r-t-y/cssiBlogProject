@@ -6,42 +6,264 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Blinker', sans-serif;
 */
 
-header {
-    padding: 10px;
-    text-align: center;
-    background: black;
-    color: white;
-    font-size: 20px;
-  }
+/* SLIDE IN */
+/* -webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease; */
 
-.boxed {
-  border: 1px solid green ;
+/*FADE IN*/
+/* animation: fadein 2s;
+-moz-animation: fadein 2s;
+-webkit-animation: fadein 2s;
+-o-animation: fadein 2s;  */
+.first
+{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+.sectionBar
+{
+  display: grid;
+  grid-template-columns: auto;
+  background: #0F0E16;
+  padding-left: 120px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+.titleBar
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  top: 0px;
+  position: sticky;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  z-index: 999;
 }
 
-.grid-container {
+.images
+{
+  height: auto;
+}
+.header
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+#mainHeader
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  font-family: 'Roboto', sans-serif;
+}
+.defaultButtons
+{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+#webName
+{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b0221;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+}
+#aboutButton
+{
+  grid-area: abutton;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #1b0221;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+
+}
+#photosButton
+{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b0221;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+
+}
+#searchBox
+{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b0221;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+
+}
+
+.paragraphGrid
+{
+  /* animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s; */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 5px;
-  background-color: lightgreen;
-  padding: 30px;
+  grid-template-rows: 400px 400px 400px;
+  grid-row-gap: 50px;
+  grid-column-gap: 100px;
+  padding-top: 100px;
+  margin-bottom: 200px;
+  margin-left: 250px;
+  margin-right: 250px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
-.grid-container > div {
-  background-color: lightblue;
-  text-align: center;
-  border-radius: 25px;
-  padding: 70px 0;
-  font-size: 10px;
+.paragraphs
+{
+  background-color: white;
+  box-shadow: 3px 3px 3px -3px lightgrey;
+  box-shadow: 1px 1px 3px 3px lightgrey;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.paragraphTitle
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  font-family: 'Roboto', sans-serif;
+}
+.paragraphPassages
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  line-height: 1.5;
+  padding-top: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+a
+{
+  text-decoration: none;
+  color: black;
 }
 
-#first-pic{
-  background: url("https://media.giphy.com/media/sA2zyKbPXKX1S/giphy.gif");
+#p1
+{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
-
-#second-pic{
-  background: url("https://media.giphy.com/media/sA2zyKbPXKX1S/giphy.gif");
+#p2
+{
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
-
-#third-pic{
-  background: url("https://media.giphy.com/media/sA2zyKbPXKX1S/giphy.gif");
+#p3
+{
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+#i1
+{
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
+  background-size: cover;
+}
+#i2
+{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
+  background-size: cover;
+}
+#i3
+{
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
+  background-size: cover;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }

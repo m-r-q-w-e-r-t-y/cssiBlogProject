@@ -18,7 +18,12 @@ transition: all 1s ease; */
 -moz-animation: fadein 2s;
 -webkit-animation: fadein 2s;
 -o-animation: fadein 2s;  */
-
+.first
+{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
 .sectionBar
 {
   display: grid;
@@ -27,10 +32,12 @@ transition: all 1s ease; */
   padding-left: 120px;
   padding-top: 200px;
   padding-bottom: 200px;
-  /* animation: fadein 2s;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  animation: fadein 2s;
   -moz-animation: fadein 2s;
   -webkit-animation: fadein 2s;
-  -o-animation: fadein 2s; */
+  -o-animation: fadein 2s;
 }
 .titleBar
 {
@@ -38,10 +45,10 @@ transition: all 1s ease; */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   top: 0px;
   position: sticky;
-  /* animation: fadein 2s;
+  animation: fadein 2s;
   -moz-animation: fadein 2s;
   -webkit-animation: fadein 2s;
-  -o-animation: fadein 2s; */
+  -o-animation: fadein 2s;
   z-index: 999;
 }
 
@@ -77,10 +84,11 @@ transition: all 1s ease; */
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-  background-color: #190e1c;
+  background-color: #1b0221;
   color: white;
   font-family: 'Oswald', sans-serif;
   border-bottom: solid white;
+  opacity: .9;
 }
 #aboutButton
 {
@@ -88,7 +96,7 @@ transition: all 1s ease; */
   display: block;
   width: 100%;
   border: none;
-  background-color: #190e1c;
+  background-color: #1b0221;
   padding: 20px 28px;
   font-size: 16px;
   cursor: pointer;
@@ -96,6 +104,8 @@ transition: all 1s ease; */
   color: white;
   font-family: 'Oswald', sans-serif;
   border-bottom: solid white;
+  opacity: .9;
+
 }
 #photosButton
 {
@@ -107,10 +117,12 @@ transition: all 1s ease; */
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-  background-color: #190e1c;
+  background-color: #1b0221;
   color: white;
   font-family: 'Oswald', sans-serif;
   border-bottom: solid white;
+  opacity: .9;
+
 }
 #searchBox
 {
@@ -122,10 +134,12 @@ transition: all 1s ease; */
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-  background-color: #190e1c;
+  background-color: #1b0221;
   color: white;
   font-family: 'Oswald', sans-serif;
   border-bottom: solid white;
+  opacity: .9;
+
 }
 
 .paragraphGrid
@@ -143,6 +157,11 @@ transition: all 1s ease; */
   margin-bottom: 200px;
   margin-left: 250px;
   margin-right: 250px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
 .paragraphs
 {
@@ -215,4 +234,36 @@ a
   grid-row-end: 4;
   background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
   background-size: cover;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }

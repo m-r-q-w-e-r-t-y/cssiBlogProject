@@ -13,6 +13,14 @@ body{
   background-color: #0B636B;
   margin:auto;
 }
+.pic1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-image(https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HKXE2?wid=2000&hei=2000&fmt=jpeg&qlt=95&op_usm=0.5%2C0.5&.v=1500328304500);
+}
+
+
 
 .header{
 display:grid;
@@ -81,4 +89,3 @@ h1{
   color: white;
   font-size: 35px;
   font-family:"Roboto Condensed",sans-serif;
-}
