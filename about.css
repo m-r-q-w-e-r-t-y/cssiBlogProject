@@ -27,10 +27,10 @@ transition: all 1s ease; */
   padding-left: 120px;
   padding-top: 200px;
   padding-bottom: 200px;
-  animation: fadein 2s;
+  /* animation: fadein 2s;
   -moz-animation: fadein 2s;
   -webkit-animation: fadein 2s;
-  -o-animation: fadein 2s;`
+  -o-animation: fadein 2s; */
 }
 .titleBar
 {
@@ -38,12 +38,13 @@ transition: all 1s ease; */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   top: 0px;
   position: sticky;
-  animation: fadein 2s;
+  /* animation: fadein 2s;
   -moz-animation: fadein 2s;
   -webkit-animation: fadein 2s;
-  -o-animation: fadein 2s;
+  -o-animation: fadein 2s; */
   z-index: 999;
 }
+
 .images
 {
   height: auto;
@@ -129,10 +130,10 @@ transition: all 1s ease; */
 
 .paragraphGrid
 {
-  animation: fadein 2s;
+  /* animation: fadein 2s;
   -moz-animation: fadein 2s;
   -webkit-animation: fadein 2s;
-  -o-animation: fadein 2s;
+  -o-animation: fadein 2s; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 400px 400px 400px;
@@ -214,36 +215,4 @@ a
   grid-row-end: 4;
   background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
   background-size: cover;
-}
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
 }

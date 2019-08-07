@@ -11,27 +11,27 @@ jinja_current_directory = jinja2.Environment(
 
 class MainHandler(webapp2.RequestHandler):
   def get(self):
-    mainTemplate = jinja_current_directory.get_template('templates/main.html')
+    mainTemplate = jinja_current_directory.get_template('main.html')
     self.response.write(mainTemplate.render())
 
 class DigitalHandler(webapp2.RequestHandler):
   def get(self):
-    secondTemplate = jinja_current_directory.get_template('templates/digital.html')
+    secondTemplate = jinja_current_directory.get_template('digital.html')
     self.response.write(secondTemplate.render())
 
 class LearnHandler(webapp2.RequestHandler):
   def get(self):
-    secondTemplate = jinja_current_directory.get_template('templates/learn.html')
+    secondTemplate = jinja_current_directory.get_template('learn.html')
     self.response.write(secondTemplate.render())
 
 class PollutionHandler(webapp2.RequestHandler):
   def get(self):
-    secondTemplate = jinja_current_directory.get_template('templates/pollution.html')
+    secondTemplate = jinja_current_directory.get_template('pollution.html')
     self.response.write(secondTemplate.render())
 
 class AboutHandler(webapp2.RequestHandler):
   def get(self):
-    secondTemplate = jinja_current_directory.get_template('templates/about.html')
+    secondTemplate = jinja_current_directory.get_template('about.html')
     self.response.write(secondTemplate.render())
 
 class PhotosHandler(webapp2.RequestHandler):
