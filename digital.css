@@ -33,8 +33,6 @@ text-align: left;
 }
 
 
-
-
 .box_a{
   color: #0B636B;
   font-family: "Oswald", sans-serif;
@@ -47,9 +45,20 @@ text-align: left;
   font-size: 25px;
 }
 
+.box_b{
+  border: 7px solid #53D9E6;
+  border-width: 5px;
+  border-radius: 25px;
+  padding:inherit;
+  align-content: center;
+}
 
-
-
+.box_d{
+  border: 7px solid #53D9E6;
+  border-width: 5px;
+  border-radius: 25px;
+  padding:inherit;
+}
 
 
 .box_c{
