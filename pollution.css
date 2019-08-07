@@ -144,10 +144,55 @@ body{
   margin-right: auto;
   margin-top: auto;
 }
+#aboutButton
+{
+  grid-area: abutton;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #1b0221;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
 
-#first-pic{
-  background: url("https://media.giphy.com/media/sA2zyKbPXKX1S/giphy.gif");
 }
+#photosButton
+{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b0221;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+
+}
+#searchBox
+{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b0221;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
 
 #second-pic{
   background: url("https://thumbs.gfycat.com/RawElasticAfricanharrierhawk-size_restricted.gif");

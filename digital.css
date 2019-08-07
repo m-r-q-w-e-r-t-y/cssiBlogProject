@@ -5,175 +5,87 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Blinker', sans-serif;
 */
+/*
+div.class_name is how to edit a specific div
+*/
 
-.passage
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  line-height: 1.5;
-  padding-top: 10px;
-  font-family: 'Roboto Condensed', sans-serif;
+body{
+  background-color: #0B636B;
+  margin:auto;
 }
-
-.date
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  font-family: 'Roboto', sans-serif;
-}
-
-.rightArticles
-{
-  margin-top: 13px;
-  padding-top: 13px;
-  padding-bottom: 50px;
-  width: 70%;
-}
-.images
-{
-  margin-left: -100px;
-  margin-right: auto;
-  padding-top: 10px;
-  height: 350px;
-}
-.header
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-
-#mainHeader
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  font-family: 'Roboto', sans-serif;
-}
-
-.defaultButtons
-{
+.pic1{
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  margin-bottom: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-image(https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HKXE2?wid=2000&hei=2000&fmt=jpeg&qlt=95&op_usm=0.5%2C0.5&.v=1500328304500);
 }
 
-#webName
-{
-  grid-area: pbutton;
-  display: block;
-  width: 100%;
-  border: none;
-  padding: 20px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #190e1c;
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  border-bottom: solid white;
-}
-#aboutButton
-{
-  grid-area: abutton;
-  display: block;
-  width: 100%;
-  border: none;
-  background-color: #190e1c;
-  padding: 20px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  border-bottom: solid white;
-}
-#photosButton
-{
-  grid-area: pbutton;
-  display: block;
-  width: 100%;
-  border: none;
-  padding: 20px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #190e1c;
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  border-bottom: solid white;
-}
-#header
-{
-  grid-area: head;
-  color: white;
-  font-size: 350%;
-  font-family: 'Oswald', sans-serif;
-  margin-top: 100px;
-  margin-right: auto;
-  margin-left: 190px;
-  width: 70%;
-}
-#subheader
-{
-  grid-area: head;
-  color: white;
-  font-size: 100%;
-  font-family: 'Roboto', sans-serif;
-  margin-right: auto;
-  margin-left: 190px;
-  width: 70%;
-}
-#bottomBlock
-{
-  grid-area: footer;
+
+
+.header{
+display:grid;
+grid-template-columns:1fr;
+padding: 70px;
+background: black;
+text-align: left;
 }
 
-#searchBox
-{
-  grid-area: pbutton;
-  display: block;
-  width: 100%;
-  border: none;
-  padding: 20px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #190e1c;
+.Passages{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  padding-top: 40px;
+  align:center;
+}
+
+
+.box_a{
+  color: #0B636B;
+  font-family: "Oswald", sans-serif;
+  background-color: #53D9E6;
+  align: right;
+  /*---Borders----*/
+  border: 2px solid #53D9E6;
+  border-width: 20px;
+  border-radius: 25px;
+  font-size: 25px;
+}
+
+.box_b{
+  border: 7px solid #53D9E6;
+  border-width: 5px;
+  border-radius: 25px;
+  padding:inherit;
+  align-content: center;
+}
+
+.box_d{
+  border: 7px solid #53D9E6;
+  border-width: 5px;
+  border-radius: 25px;
+  padding:inherit;
+}
+
+
+.box_c{
+  color: #0B636B;
+  font-family: "Oswald", sans-serif;
+  background-color: #53D9E6;
+  align: right;
+  /*---Borders----*/
+  border: 2px solid #53D9E6;
+  border-width: 20px;
+  border-radius: 25px;
+  font-size: 25px;
+}
+
+
+
+
+
+h1{
   color: white;
-  font-family: 'Oswald', sans-serif;
-  border-bottom: solid white;
-}
-
-.headingBorder
-{
-/*  position: relative; /* for the child pseudo-elements
-  /* negative offset = section padding
-  margin: 0 -30px;
-  /* add back section padding value
-  padding: 0.25rem 30px;
-  background: #0F0E16;
-  padding-top: 300px;
-  padding-bottom: 300px;
-  */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 3fr 1fr;
-  grid-template-areas:
-    "main search abutton pbutton"
-    "head head head head"
-    "footer footer footer footer";
-  background: #0F0E16;
-  margin: -10px -10px;
-}
-
-#gridSectionP
-{
-  display: grid;
-  grid-template-columns: 50px [main-start] 1fr [main-end] 600px;
-  padding-top: 100px;
-  margin-bottom: 200px;
-  /*grid-template-rows: 100px [main-start] 1fr [main-end] 100px;*/
-}
+  font-size: 35px;
+  font-family:"Roboto Condensed",sans-serif;
