@@ -1,116 +1,84 @@
 <!DOCTYPE html>
 <head>
+
   <title>Blog Project</title>
-  <link rel="stylesheet" type="text/css" href="css/pollution.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Blinker|Open+Sans|Oswald|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
 </head>
 
-<body>
+<body class="first">
 
-  <section class="headingBorder"><!--headingBorder----------------------------->
-        <section class='topBlock'>
-          <button onclick="window.location='http://localhost:8080/';" id='webName'>CSSI Extension at Queens College</button>
-        </section>
-
-        <section class='topBlock'>
-          <button id='searchBox'>Search</button>
-          <!--middleBlock-->
-        </section>
-
-        <section class='topBlock'>
-          <button onclick="window.location='http://localhost:8080/about';" id='aboutButton'>About</button>
-        </section>
-
-        <section class='topBlock'>
-          <button onclick="window.location='http://localhost:8080/phots';" id='photosButton'>Photos</button>
-        </section>
-
-        <section>
-          <header id='header'>Page1</header>
-          <h1 id='subheader'>Section Select</h1>
-        </section>
-
-        <section id="righBlock">
-          <!---->
-        </section>
-
-        <section id='bottomBlock'>
-          <!--bottomBlock-->
-        </section>
-
-  </section><!--headingBorder-------------------------------------------------->
-
-  <section id='gridSectionP'>
-
-    <section> <!--Left (blank)------------------------------------------------->
-
-        <section class="date">
-
-        </section>
-
-    </section>
-
-    <section> <!--Middle Section----------------------------------------------->
-
-        <div class="paragraphs">
-          <section class="date">
-            <h4>December 31, 2019</h2>
+    <div class="titleBar"><!--THIS IS THE TITLE BAR---------------------------->
+          <section>
+              <button onclick="window.location='http://localhost:8080/';" id='webName'>CSSI Extension at Queens College</button>
           </section>
 
-          <section class="passage">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </section>
-        </div>
-
-        <div class="paragraphs">
-          <section class="date">
-            <h4>December 31, 2019</h2>
+          <section>
+              <button id='searchBox'>Search</button>
           </section>
 
-          <section class="passage">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <section>
+              <button onclick="window.location='http://localhost:8080/about';" id='aboutButton'>About</button>
           </section>
-        </div>
 
-        <div href='https://google.com' class="paragraphs">
-          <section class="date">
-            <h4>December 31, 2019</h2>
+          <section>
+              <button onclick="window.location='http://localhost:8080/photos';" id='photosButton'>Photos</button>
           </section>
-          <section class="passage">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </section>
-        </div>
+    </div><!--THIS IS THE TITLE BAR-------------------------------------------->
 
-    </section>
 
-    <section> <!--Right Section------------------------------------------------>
+    <div class="sectionBar"><!--THIS IS THE SECTION BAR------------------------>
+          <h1>Pollution</h1>
+    </div><!--THIS IS THE SECTION BAR------------------------------------------>
 
-      <div class="rightArticles">
-        <section>
-          <img class="images" src="https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg">
-        </section>
-      </div>
 
-      <div class="rightArticles">
-        <section>
-          <img class="images" src="https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg">
-        </section>
-      </div>
+      <div class='paragraphGrid'><!--THIS IS FOR THE PARAGRAPHS/IMAGES-------------->
+                      <div class="paragraphs" id="p1">
+                <a href="http://localhost:8080/about">
 
-      <div class="rightArticles">
-        <section>
-          <img class="images" src="https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg">
-        </section>
-      </div>
+                <section class="paragraphTitle">
+                  <h4>December 31, 2019</h2>
+                </section>
 
-      <div class="rightArticles">
-        <section>
-          <img class="images" src="https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg">
-        </section>
-      </div>
+                <section class="paragraphPassages">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </section>
+              </a>
+              </div>
 
-    </section> <!--Right Section------------------------------------------------>
 
-  </section>
+              <div class="paragraphs" id="p2">
+                <section class="paragraphTitle">
+                  <h4>December 31, 2019</h2>
+                </section>
+
+                <section class="paragraphPassages">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </section>
+              </div>
+
+              <div class="paragraphs" id="p3">
+                <section class="paragraphTitle">
+                  <h4>December 31, 2019</h2>
+                </section>
+                <section class="paragraphPassages">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </section>
+              </div>
+
+
+              <div id="i1">
+              </div>
+
+              <div id="i2">
+              </div>
+
+              <div id="i3">
+              </div>
+            </body>
+
 
 </body>
