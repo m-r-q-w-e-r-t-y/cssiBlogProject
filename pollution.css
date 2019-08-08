@@ -114,7 +114,7 @@ font-family: 'Blinker', sans-serif;
   }
 
 body{
-  background-color: lightgreen;
+  background-color: #00CC6E;
 }
 .grid-container {
   display: grid;
@@ -193,6 +193,11 @@ body{
   font-family: 'Oswald', sans-serif;
   border-bottom: solid white;
   opacity: .9;
+}
+
+#first-pic{
+  background: url("https://media1.giphy.com/media/Y2sQVqjfa185O/source.gif");
+}
 
 #second-pic{
   background: url("https://thumbs.gfycat.com/RawElasticAfricanharrierhawk-size_restricted.gif");
@@ -230,4 +235,30 @@ body{
     to {
         opacity: 1;
     }
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.text .collapsible {
+  background-color: #00FA99;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #99ff99;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #00cc66;
 }
