@@ -121,8 +121,8 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 5px;
-  padding: 20px;
+  grid-gap: 10px;
+  padding: 30px;
 }
 
 /* div.text
@@ -132,9 +132,10 @@ body{
 
 .grid-container >div {
   border-width: 20px;
-  border: 2px solid #006400	;
-  text-align: center;
-  border-radius: 25px;
+  border: 2px solid white	;
+  background-color: #2E8B57	;
+  text-align: left;
+  border-radius: 20px;
   padding: 40px;
   font-size: 15px;
 }

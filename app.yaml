@@ -1,4 +1,3 @@
-version: 1
 runtime: python27
 api_version: 1
 threadsafe: true
@@ -7,7 +6,7 @@ handlers:
 - url: /css
   static_dir: css
 - url: /.*
-  script: main.app
+  public: main.app
 
 libraries:
 - name: webapp2
