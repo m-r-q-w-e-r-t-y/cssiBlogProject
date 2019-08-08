@@ -36,7 +36,7 @@ class AboutHandler(webapp2.RequestHandler):
 
 class PhotosHandler(webapp2.RequestHandler):
   def get(self):
-    secondTemplate = jinja_current_directory.get_template('templates/photos.html')
+    secondTemplate = jinja_current_directory.get_template('photos.html')
     self.response.write(secondTemplate.render())
 
 app = webapp2.WSGIApplication([
