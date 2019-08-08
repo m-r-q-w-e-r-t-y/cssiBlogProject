@@ -9,18 +9,117 @@ font-family: 'Blinker', sans-serif;
 div.class_name is how to edit a specific div
 */
 
+.titleBar{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  top: 0px;
+  position: sticky;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  z-index: 999;
+}
+
+#mainHeader
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  font-family: 'Roboto', sans-serif;
+}
+.defaultButtons
+{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+#webName{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b0221;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+}
+#aboutButton{
+  grid-area: abutton;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #1b0221;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+}
+#photosButton{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b0221;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+}
+
+#searchBox{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b0221;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+}
+
+
 body{
   background-color: #0B636B;
-  margin:auto;
-}
-.pic1{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  background-image(https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HKXE2?wid=2000&hei=2000&fmt=jpeg&qlt=95&op_usm=0.5%2C0.5&.v=1500328304500);
+  margin: auto;
 }
 
 
+.pics{
+  border-radius: 25px;
+}
+
+
+/* column images----*/
+.imgR{
+  background: url("https://www.timespub.com/wp-content/gallery/newtown-gazette-post-photos/cache/wall-art-2852231_960_720.jpg-nggid047179-ngg0dyn-420x0x100-00f0w010c010r110f110r010t010.jpg")
+}
+.imgR{
+  border-radius: 25px;
+}
+.imgL{
+  background: url("http://researchideas.ca/mc/wp-content/uploads/2015/08/sc9.jpg")
+}
+.imgL{
+  border-radius: 25px;
+}
 
 .header{
 display:grid;
@@ -37,11 +136,12 @@ text-align: left;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
   padding-top: 40px;
-  align:center;
+
 }
 
 
 .box_a{
+  transition: 2s;
   color: #0B636B;
   font-family: "Oswald", sans-serif;
   background-color: #53D9E6;
@@ -51,25 +151,12 @@ text-align: left;
   border-width: 20px;
   border-radius: 25px;
   font-size: 25px;
+
 }
+
 
 .box_b{
-  border: 7px solid #53D9E6;
-  border-width: 5px;
-  border-radius: 25px;
-  padding:inherit;
-  align-content: center;
-}
-
-.box_d{
-  border: 7px solid #53D9E6;
-  border-width: 5px;
-  border-radius: 25px;
-  padding:inherit;
-}
-
-
-.box_c{
+  transition: 2s;
   color: #0B636B;
   font-family: "Oswald", sans-serif;
   background-color: #53D9E6;
@@ -81,8 +168,18 @@ text-align: left;
   font-size: 25px;
 }
 
-
-
+.box_c{
+  transition: 2s;
+  color: #0B636B;
+  font-family: "Oswald", sans-serif;
+  background-color: #53D9E6;
+  align: right;
+  /*---Borders----*/
+  border: 2px solid #53D9E6;
+  border-width: 20px;
+  border-radius: 25px;
+  font-size: 25px;
+}
 
 
 h1{
