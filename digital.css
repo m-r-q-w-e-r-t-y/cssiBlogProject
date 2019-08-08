@@ -97,27 +97,32 @@ div.class_name is how to edit a specific div
 
 
 body{
-  background-color: #0B636B;
+  background-color: #29B5FD;
   margin: auto;
 }
 
 
-.pics{
-  border-radius: 25px;
-}
 
 
 /* column images----*/
 .imgR{
+  border: 2px solid white;
+  border-width: 2px;
   background: url("https://www.timespub.com/wp-content/gallery/newtown-gazette-post-photos/cache/wall-art-2852231_960_720.jpg-nggid047179-ngg0dyn-420x0x100-00f0w010c010r110f110r010t010.jpg")
 }
 .imgR{
+  border: 2px solid white;
+  border-width: 2px;
   border-radius: 25px;
 }
 .imgL{
+  border: 2px solid white;
+  border-width: 2px;
   background: url("http://researchideas.ca/mc/wp-content/uploads/2015/08/sc9.jpg")
 }
 .imgL{
+  border: 2px solid white;
+  border-width: 2px;
   border-radius: 25px;
 }
 
@@ -133,8 +138,8 @@ text-align: left;
   display:grid;
   grid-template-columns:1fr 1fr;
   grid-template-rows: 1fr 1fr ;
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   padding-top: 40px;
 
 }
@@ -142,47 +147,76 @@ text-align: left;
 
 .box_a{
   transition: 2s;
-  color: #0B636B;
-  font-family: "Oswald", sans-serif;
-  background-color: #53D9E6;
-  align: right;
+  color: #black;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #0583C3;
+  align: center;
   /*---Borders----*/
-  border: 2px solid #53D9E6;
-  border-width: 20px;
-  border-radius: 25px;
-  font-size: 25px;
-
+  border: 2px solid white;
+  border-width: 2px;
+  border-radius: 15px;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom:50px;
 }
 
 
 .box_b{
   transition: 2s;
-  color: #0B636B;
-  font-family: "Oswald", sans-serif;
-  background-color: #53D9E6;
-  align: right;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #0583C3;
+  align: center;
   /*---Borders----*/
-  border: 2px solid #53D9E6;
-  border-width: 20px;
-  border-radius: 25px;
-  font-size: 25px;
+  border: 2px solid white;
+  border-width: 2px;
+  border-radius: 15px;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom:50px;
 }
 
 .box_c{
   transition: 2s;
-  color: #0B636B;
-  font-family: "Oswald", sans-serif;
-  background-color: #53D9E6;
-  align: right;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #0583C3;
+  align: center;
   /*---Borders----*/
-  border: 2px solid #53D9E6;
-  border-width: 20px;
-  border-radius: 25px;
-  font-size: 25px;
+  border: 2px solid white;
+  border-width: 2px;
+  border-radius: 15px;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom:50px;
 }
 
+.box_d{
+  transition: 2s;
+  color: #black;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #0583C3;
+  align: center;
+  /*---Borders----*/
+  border: 2px solid white;
+  border-width: 2px;
+  border-radius: 15px;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom:50px;
+}
 
 h1{
   color: white;
   font-size: 35px;
   font-family:"Roboto Condensed",sans-serif;
+
+}
