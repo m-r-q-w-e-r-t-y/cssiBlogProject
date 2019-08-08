@@ -130,7 +130,6 @@ text-align: left;
 }
 
 .Passages{
-  transition: 2s;
   display:grid;
   grid-template-columns:1fr 1fr;
   grid-template-rows: 1fr 1fr ;
@@ -139,31 +138,6 @@ text-align: left;
   padding-top: 40px;
 
 }
-
-/* .art{
-  display:grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 100px;
-  grid-column-gap: 10px;
-  padding-top: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
-} */
-
-
-/* .art1{
-  border-radius: 25px;
-  background: url("file:///Users/google/Desktop/CSSI%20project/images/Ariann%20cartoon%20complete.png");
-}
-.art2{
-  background: url("file:///Users/google/Desktop/CSSI%20project/images/Taboo%20book%20coverr%20night%20pic.jpg");
-  border-radius: 25px;
-}
-.art3{
-  background: url("file:///Users/google/Desktop/CSSI%20project/images/Midari%20finished.png");
-  border-radius: 25px;
-} */
-
 
 
 .box_a{
@@ -194,7 +168,18 @@ text-align: left;
   font-size: 25px;
 }
 
-
+.box_c{
+  transition: 2s;
+  color: #0B636B;
+  font-family: "Oswald", sans-serif;
+  background-color: #53D9E6;
+  align: right;
+  /*---Borders----*/
+  border: 2px solid #53D9E6;
+  border-width: 20px;
+  border-radius: 25px;
+  font-size: 25px;
+}
 
 
 

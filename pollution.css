@@ -5,44 +5,11 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Blinker', sans-serif;
 */
-
-/* SLIDE IN */
-/* -webkit-transition: all 1s ease;
--moz-transition: all 1s ease;
--o-transition: all 1s ease;
--ms-transition: all 1s ease;
-transition: all 1s ease; */
-
-/*FADE IN*/
-/* animation: fadein 2s;
--moz-animation: fadein 2s;
--webkit-animation: fadein 2s;
--o-animation: fadein 2s;  */
-.first
-{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-}
-.sectionBar
-{
-  display: grid;
-  grid-template-columns: auto;
-  background: #0F0E16;
-  padding-left: 120px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -webkit-animation: fadein 2s;
-  -o-animation: fadein 2s;
-}
 .titleBar
 {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   top: 0px;
   position: sticky;
   animation: fadein 2s;
@@ -52,28 +19,6 @@ transition: all 1s ease; */
   z-index: 999;
 }
 
-.images
-{
-  height: auto;
-}
-.header
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-#mainHeader
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  font-family: 'Roboto', sans-serif;
-}
-.defaultButtons
-{
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-}
 #webName
 {
   grid-area: pbutton;
@@ -142,99 +87,118 @@ transition: all 1s ease; */
 
 }
 
-.paragraphGrid
-{
-  /* animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -webkit-animation: fadein 2s;
-  -o-animation: fadein 2s; */
+/* header {
+    padding: 10px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  .sectionBar
+  {
+    display: grid;
+    grid-template-columns: auto;
+    background: #0F0E16;
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -o-animation: fadein 2s;
+  }
+
+body{
+  background-color: lightgreen;
+}
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px 400px 400px;
-  grid-row-gap: 50px;
-  grid-column-gap: 100px;
-  padding-top: 100px;
-  margin-bottom: 200px;
-  margin-left: 250px;
-  margin-right: 250px;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-}
-.paragraphs
-{
-  background-color: white;
-  box-shadow: 3px 3px 3px -3px lightgrey;
-  box-shadow: 1px 1px 3px 3px lightgrey;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.paragraphTitle
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  font-family: 'Roboto', sans-serif;
-}
-.paragraphPassages
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  line-height: 1.5;
-  padding-top: 10px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-a
-{
-  text-decoration: none;
-  color: black;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+  padding: 20px;
 }
 
-#p1
+/* div.text
 {
-  grid-column-start: 1;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  border-color:blue;
+} */
+
+.grid-container >div {
+  border-width: 20px;
+  border: 2px solid blue;
+  text-align: center;
+  border-radius: 25px;
+  padding: 60px;
+  font-size: 20px;
 }
-#p2
+
+.first
 {
-  grid-column-start: 1;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
 }
-#p3
+#aboutButton
 {
-  grid-column-start: 1;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-area: abutton;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #1b0221;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+
 }
-#i1
+#photosButton
 {
-  grid-column-start: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
-  background-size: cover;
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b0221;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+
 }
-#i2
+#searchBox
 {
-  grid-column-start: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
-  background-size: cover;
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b0221;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+
+#second-pic{
+  background: url("https://thumbs.gfycat.com/RawElasticAfricanharrierhawk-size_restricted.gif");
 }
-#i3
-{
-  grid-column-start: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
-  background-size: cover;
-}
+
+
 @keyframes fadein {
     from {
         opacity:0;
