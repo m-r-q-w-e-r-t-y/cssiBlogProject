@@ -1,7 +1,7 @@
-PhotosHandler<script>
+<script>
     function visitPage(){
         window.location='http://localhost:8080/';
-    }
+      }
 </script>
 <button onclick="visitPage();">CSSI Extension at Queens College</button>
 
