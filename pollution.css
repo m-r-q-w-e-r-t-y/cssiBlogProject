@@ -234,6 +234,7 @@ body{
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+
 }
 
 /* Links inside the dropdown */
@@ -242,6 +243,7 @@ body{
   padding: 20px 16px;
   text-decoration: none;
   display: block;
+
 }
 
 /* Change color of dropdown links on hover */
