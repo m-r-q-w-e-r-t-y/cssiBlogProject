@@ -234,7 +234,6 @@ body{
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-
 }
 
 /* Links inside the dropdown */
@@ -255,6 +254,17 @@ body{
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover #searchBox {background-color: #3e8e41;}
 
+#pollution{
+  background-color: #00CC6E
+}
+
+#digital{
+background-color: blue;
+}
+
+#learning{
+  background-color: #DC143C	;
+}
 
 @keyframes fadein {
     from {
