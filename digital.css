@@ -108,7 +108,7 @@ body{
 .imgR{
   border: 2px solid white;
   border-width: 2px;
-  background: url("https://www.timespub.com/wp-content/gallery/newtown-gazette-post-photos/cache/wall-art-2852231_960_720.jpg-nggid047179-ngg0dyn-420x0x100-00f0w010c010r110f110r010t010.jpg")
+  background: url("https://media.giphy.com/media/e6jkuTVP2wRry/giphy.gif")
 }
 .imgR{
   border: 2px solid white;
@@ -118,7 +118,7 @@ body{
 .imgL{
   border: 2px solid white;
   border-width: 2px;
-  background: url("http://researchideas.ca/mc/wp-content/uploads/2015/08/sc9.jpg")
+  background: url("https://media2.giphy.com/media/4ZcTZLCk0V9ZLyHDLV/giphy.gif?cid=790b761168912cef00fca5bf417815deacdb012959e90234&rid=giphy.gif")
 }
 .imgL{
   border: 2px solid white;
@@ -141,6 +141,7 @@ text-align: left;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   padding-top: 40px;
+  margin: 20px;
 
 }
 
@@ -217,6 +218,6 @@ text-align: left;
 h1{
   color: white;
   font-size: 35px;
-  font-family:"Roboto Condensed",sans-serif;
+  font-family:"Oswald",sans-serif;
 
 }
