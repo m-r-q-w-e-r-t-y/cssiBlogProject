@@ -114,6 +114,7 @@ body{
   border: 2px solid white;
   border-width: 2px;
   border-radius: 25px;
+
 }
 .imgL{
   border: 2px solid white;
@@ -124,7 +125,41 @@ body{
   border: 2px solid white;
   border-width: 2px;
   border-radius: 25px;
+
 }
+
+.dropdown{
+  position: inline-block;
+}
+
+.dropdown-content{
+  display:none;
+  background-color: #0583C3;
+  min-width: 160px;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2) ;
+  z-index: 1000;
+  position:absolute;
+}
+
+/* links inside the dropdown */
+.dropdown-content a{
+  color: black;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+/* change color of dropdown links of hover */
+.dropdown-content a:hover{background-color: #ddd;}
+
+/* show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display:block;}
+
+/* chnage bkgrd color of dropdown button when dropdown content is shown */
+.dropdown:hover #searchBox {background-color: #0583C3;}
+
+
 
 .header{
 display:grid;
@@ -133,6 +168,20 @@ padding: 70px;
 background: black;
 text-align: left;
 }
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  grid-template-columns: 1fr;
+  padding: 5px;
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: "Roboto Condensed",sans-serif;
+}
+
 
 .Passages{
   display:grid;

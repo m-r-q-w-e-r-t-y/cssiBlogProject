@@ -28,7 +28,7 @@ transition: all 1s ease; */
 {
   display: grid;
   grid-template-columns: auto;
-  background: #0F0E16;
+  background: black;
   padding-left: 120px;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -51,6 +51,42 @@ transition: all 1s ease; */
   -o-animation: fadein 2s;
   z-index: 999;
 }
+
+
+.dropdown{
+  position: inline-block;
+}
+
+.dropdown-content{
+  display:none;
+  background-color: white;
+  min-width: 160px;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2) ;
+  z-index: 1000;
+  position:absolute;
+}
+
+/* links inside the dropdown */
+.dropdown-content a{
+  color: black;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+/* change color of dropdown links of hover */
+.dropdown-content a:hover{background-color: #ddd;}
+
+/* show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display:block;}
+
+/* chnage bkgrd color of dropdown button when dropdown content is shown */
+.dropdown:hover #searchBox {background-color: #1b0221;}
+
+
+
+
 
 .images
 {
@@ -211,6 +247,12 @@ a
   grid-row-start: 3;
   grid-row-end: 4;
 }
+#p4
+{
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
 #i1
 {
   grid-column-start: 2;
@@ -228,6 +270,14 @@ a
   background-size: cover;
 }
 #i3
+{
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
+  background-size: cover;
+}
+#i4
 {
   grid-column-start: 2;
   grid-row-start: 3;
