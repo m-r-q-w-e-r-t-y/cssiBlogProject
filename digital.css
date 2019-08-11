@@ -105,16 +105,19 @@ body{
 
 
 /* column images----*/
+/*--- right image--- */
 .imgR{
   border: 2px solid white;
   border-width: 2px;
   background: url("https://media.giphy.com/media/e6jkuTVP2wRry/giphy.gif")
+
 }
 .imgR{
   border: 2px solid white;
   border-width: 2px;
   border-radius: 25px;
 
+/*---left image ---*/
 }
 .imgL{
   border: 2px solid white;
@@ -125,7 +128,6 @@ body{
   border: 2px solid white;
   border-width: 2px;
   border-radius: 25px;
-
 }
 
 .dropdown{
@@ -166,10 +168,12 @@ display:grid;
 grid-template-columns:1fr;
 padding: 70px;
 background: black;
-text-align: left;
+text-align:left;
+color: white;
+font-family: "Roboto Condensed",sans-serif;
 }
 
-.footer{
+/* .footer{
   position: fixed;
   left: 0;
   bottom: 0;
@@ -180,7 +184,7 @@ text-align: left;
   color: white;
   text-align: center;
   font-family: "Roboto Condensed",sans-serif;
-}
+} */
 
 
 .Passages{
@@ -200,7 +204,7 @@ text-align: left;
   color: #black;
   font-family: "Roboto Condensed", sans-serif;
   background-color: #0583C3;
-  align: center;
+  text-align: center;
   /*---Borders----*/
   border: 2px solid white;
   border-width: 2px;
@@ -218,7 +222,7 @@ text-align: left;
   color: black;
   font-family: "Roboto Condensed", sans-serif;
   background-color: #0583C3;
-  align: center;
+  text-align: center;
   /*---Borders----*/
   border: 2px solid white;
   border-width: 2px;
@@ -235,7 +239,7 @@ text-align: left;
   color: black;
   font-family: "Roboto Condensed", sans-serif;
   background-color: #0583C3;
-  align: center;
+  text-align: center;
   /*---Borders----*/
   border: 2px solid white;
   border-width: 2px;
@@ -247,22 +251,34 @@ text-align: left;
   padding-bottom:50px;
 }
 
-.box_d{
+/* same tag--- */
+.goodbye{
   transition: 2s;
+  border: 2px solid white;
+  border-width: 2px;
+  background: url("https://media.giphy.com/media/2yyiQ20GKEQLJnLSKI/giphy.gif")
+
+}
+.goodbye{
+  border-radius: 15px;
+}
+/* same tag--- */
+
+
+
+  /* transition: 2s;
   color: #black;
   font-family: "Roboto Condensed", sans-serif;
   background-color: #0583C3;
   align: center;
   /*---Borders----*/
-  border: 2px solid white;
-  border-width: 2px;
-  border-radius: 15px;
+  /*
   font-size: 20px;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
-  padding-bottom:50px;
-}
+  padding-bottom:50px; */ */
+
 
 h1{
   color: white;
