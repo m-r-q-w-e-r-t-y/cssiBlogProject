@@ -193,6 +193,38 @@ a
   color: black;
 }
 
+.dropdown{
+  position: inline-block;
+}
+
+.dropdown-content{
+  display:none;
+  background-color: white;
+  min-width: 160px;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2) ;
+  z-index: 1000;
+  position:absolute;
+}
+
+/* links inside the dropdown */
+.dropdown-content a{
+  color: black;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+/* change color of dropdown links of hover */
+.dropdown-content a:hover{background-color: #ddd;}
+
+/* show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display:block;}
+
+/* chnage bkgrd color of dropdown button when dropdown content is shown */
+.dropdown:hover #searchBox {background-color: #1b0221;}
+
+
 #p1
 {
   grid-column-start: 1;
@@ -216,23 +248,25 @@ a
   grid-column-start: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
+  background: url('file:///Users/google/Desktop/Screenshot_20190812-092050_Instagram.jpg');
   background-size: cover;
+
 }
 #i2
 {
   grid-column-start: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
+  background: url('file:///Users/google/Desktop/20190812_091008.jpg');
   background-size: cover;
+
 }
 #i3
 {
   grid-column-start: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
+  background: url('file:///Users/google/Desktop/IMG_20190809_153202_740.jpg');
   background-size: cover;
 }
 @keyframes fadein {
