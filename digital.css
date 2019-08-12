@@ -116,6 +116,7 @@ body{
   border: 2px solid white;
   border-width: 2px;
   border-radius: 25px;
+  background-position: center;
 
 /*---left image ---*/
 }
@@ -123,11 +124,13 @@ body{
   border: 2px solid white;
   border-width: 2px;
   background: url("https://media2.giphy.com/media/4ZcTZLCk0V9ZLyHDLV/giphy.gif?cid=790b761168912cef00fca5bf417815deacdb012959e90234&rid=giphy.gif")
+
 }
 .imgL{
   border: 2px solid white;
   border-width: 2px;
   border-radius: 25px;
+  background-position: center;
 }
 
 .dropdown{
@@ -198,6 +201,17 @@ font-family: "Roboto Condensed",sans-serif;
 
 }
 
+.heading{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  font-family: "Roboto Condensed",sans-serif;
+  text-align: center;
+  color: white;
+
+
+}
+
 
 .box_a{
   transition: 2s;
@@ -214,6 +228,7 @@ font-family: "Roboto Condensed",sans-serif;
   padding-right: 50px;
   padding-top: 50px;
   padding-bottom:50px;
+
 }
 
 
@@ -251,6 +266,76 @@ font-family: "Roboto Condensed",sans-serif;
   padding-bottom:50px;
 }
 
+.Digi-art{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding-top: 60px;
+  margin: 20px;
+
+}
+
+
+.art1{
+    transition: 2s;
+    background: url("file:///Users/google/Desktop/Screenshot_20180824-232015_Instagram.png");
+    /*---Borders----*/
+    border: 2px solid white;
+    border-width: 2px;
+    border-radius: 15px;
+    font-size: 20px;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    background-position: center;
+}
+.art2{
+    transition: 2s;
+    background: url("file:///Users/google/Desktop/Ariann%20cartoon%20complete.png");
+    /*---Borders----*/
+    border: 2px solid white;
+    border-width: 2px;
+    border-radius: 15px;
+    font-size: 20px;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    background-position: center;
+}
+.art3{
+    transition: 2s;
+    background: url("file:///Users/google/Desktop/GIF-190812_105449.gif");
+    /*---Borders----*/
+    border: 2px solid white;
+    border-width: 2px;
+    border-radius: 15px;
+    font-size: 20px;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    background-position: center;
+}
+.art4{
+    transition: 2s;
+    background: url("file:///Users/google/Desktop/GIF-190812_112026.gif");
+    /*---Borders----*/
+    border: 2px solid white;
+    border-width: 2px;
+    border-radius: 15px;
+    font-size: 20px;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    background-position: center;
+
+}
+
 /* same tag--- */
 
 
@@ -263,10 +348,16 @@ font-family: "Roboto Condensed",sans-serif;
 }
 .goodbye{
   border-radius: 15px;
+  background-position: center;
 }
 /* same tag--- */
 
+.heading-image{
+  background-position: center;
+  border-radius: 15px;
+  background: url("https://media.giphy.com/media/b73wUq1jFLBTy/giphy.gif")
 
+}
 
   /* transition: 2s;
   color: #black;
