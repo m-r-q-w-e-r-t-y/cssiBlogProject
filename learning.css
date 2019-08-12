@@ -5,29 +5,15 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Blinker', sans-serif;
 */
+/*
+div.class_name is how to edit a specific div
+*/
 
+body{
+  background-color: #f24a41;
+  margin:auto;
+}
 
-.passage
-{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-}
-.sectionBar
-{
-  display: grid;
-  grid-template-columns: auto;
-  background: #0F0E16;
-  padding-left: 120px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -webkit-animation: fadein 2s;
-  -o-animation: fadein 2s;
-}
 .titleBar
 {
   display:grid;
@@ -41,28 +27,6 @@ font-family: 'Blinker', sans-serif;
   z-index: 999;
 }
 
-.images
-{
-  height: auto;
-}
-.header
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-#mainHeader
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  font-family: 'Roboto', sans-serif;
-}
-.defaultButtons
-{
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-}
 #webName
 {
   grid-area: pbutton;
@@ -131,99 +95,102 @@ font-family: 'Blinker', sans-serif;
 
 }
 
-.paragraphGrid
-{
-  /* animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -webkit-animation: fadein 2s;
-  -o-animation: fadein 2s; */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px 400px 400px;
-  grid-row-gap: 50px;
-  grid-column-gap: 100px;
-  padding-top: 100px;
-  margin-bottom: 200px;
-  margin-left: 250px;
-  margin-right: 250px;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-}
-.paragraphs
-{
-  background-color: white;
-  box-shadow: 3px 3px 3px -3px lightgrey;
-  box-shadow: 1px 1px 3px 3px lightgrey;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.paragraphTitle
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  font-family: 'Roboto', sans-serif;
-}
-.paragraphPassages
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  line-height: 1.5;
-  padding-top: 10px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-a
-{
-  text-decoration: none;
-  color: black;
+.img {
+  background: url("");
+  background-size: cover;
 }
 
-#p1
-{
-  grid-column-start: 1;
-  grid-row-start: 1;
-  grid-row-end: 2;
+.header{
+display:grid;
+grid-template-columns:1fr;
+padding: 70px;
+background: black;
+text-align: left;
 }
-#p2
-{
-  grid-column-start: 1;
-  grid-row-start: 2;
-  grid-row-end: 3;
+
+.Passages{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  padding-top: 40px;
+  align:center;
 }
-#p3
-{
-  grid-column-start: 1;
-  grid-row-start: 3;
-  grid-row-end: 4;
+
+
+.box_a{
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  background-color: #ab0000;
+  align: right;
+  /*---Borders----*/
+  border: 2px solid #ffffff;
+  border-width: 2px;
+  border-radius: 25px;
+  font-size: 25px;
+  transition: 2s;
+  margin-left:30px;
+  box-shadow: 10px 10px 5px #424242;
 }
-#i1
-{
-  grid-column-start: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
-  background-size: cover;
+
+.box_b{
+  border: 2px solid #ffffff;
+  border-width: 2px;
+  border-radius: 25px;
+  padding:inherit;
+  align-content: center;
+  transition: 2s;
+  margin-right:30px;
 }
-#i2
-{
-  grid-column-start: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
-  background-size: cover;
+
+#box_d{
+  border: 2px solid #ffffff;
+  background: url("https://thumbnails.texastribune.org/QnNsuhgnj88r00Bs5EKxNNGgLU0=/1250x838/smart/filters:quality(80)/https://static.texastribune.org/media/images/computerclassroom.jpg");
+  border-width: 2px;
+  border-radius: 25px;
+  padding:inherit;
+  transition: 2s;
+  margin-left:30px;
 }
-#i3
-{
-  grid-column-start: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
-  background-size: cover;
+
+
+.box_c{
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  background-color: #ab0000;
+  align: right;
+  /*---Borders----*/
+  border: 2px solid #ffffff;
+  border-width: 2px;
+  border-radius: 25px;
+  font-size: 25px;
+  transition: 2s;
+  margin-right:30px;
 }
+
+
+h1{
+  color: white;
+  font-size: 35px;
+  font-family:"Roboto Condensed",sans-serif;
+}
+
+
+#test {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  position: absolute;
+  background: Blue;
+  border-radius: 40px;
+  margin-left:30px;
+  padding: 20px;
+  width: 625px;
+  height: 200px;
+  transition: 2s;
+  /* left: 0; */
+}
+
 @keyframes fadein {
     from {
         opacity:0;
