@@ -159,9 +159,7 @@ body{
 .dropdown-content a:hover{background-color: #ddd;}
 
 /* show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  width:25%;
-  display:block;}
+.dropdown:hover .dropdown-content {display:block;}
 
 /* chnage bkgrd color of dropdown button when dropdown content is shown */
 .dropdown:hover #searchBox {background-color: #0583C3;}
@@ -175,7 +173,7 @@ padding: 70px;
 background: black;
 text-align:left;
 color: white;
-font-family: "Oswald",sans-serif;
+font-family: "Roboto Condensed",sans-serif;
 }
 
 /* .footer{
@@ -282,7 +280,7 @@ font-family: "Oswald",sans-serif;
 
 .art1{
     transition: 2s;
-    background: url("file:///Users/google/Desktop/Screenshot_20180824-232015_Instagram.png");
+    background: url("Screenshot_20180824-232015_Instagram.png");
     /*---Borders----*/
     border: 2px solid white;
     border-width: 2px;
@@ -296,7 +294,7 @@ font-family: "Oswald",sans-serif;
 }
 .art2{
     transition: 2s;
-    background: url("file:///Users/google/Desktop/Ariann%20cartoon%20complete.png");
+    background: url("Ariann cartoon complete.png");
     /*---Borders----*/
     border: 2px solid white;
     border-width: 2px;
@@ -310,7 +308,7 @@ font-family: "Oswald",sans-serif;
 }
 .art3{
     transition: 2s;
-    background: url("file:///Users/google/Desktop/GIF-190812_105449.gif");
+    background: url("GIF-190812_105449.gif");
     /*---Borders----*/
     border: 2px solid white;
     border-width: 2px;
@@ -324,7 +322,7 @@ font-family: "Oswald",sans-serif;
 }
 .art4{
     transition: 2s;
-    background: url("file:///Users/google/Desktop/GIF-190812_112026.gif");
+    background: url("GIF-190812_112026.gif");
     /*---Borders----*/
     border: 2px solid white;
     border-width: 2px;
@@ -355,16 +353,11 @@ font-family: "Oswald",sans-serif;
 /* same tag--- */
 
 .heading-image{
-
+  background-position: center;
   border-radius: 15px;
   background: url("https://media.giphy.com/media/b73wUq1jFLBTy/giphy.gif")
 
 }
-
-.heading-image{
-  background-position: center;
-}
-
 
   /* transition: 2s;
   color: #black;
