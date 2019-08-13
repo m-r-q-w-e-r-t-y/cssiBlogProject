@@ -26,12 +26,12 @@ transition: all 1s ease; */
 {
   display: grid;
   grid-template-columns: auto;
-  background: #0F0E16;
-  padding-left: 120px;
+  background: url('https://imaginegnats.com/wp-content/uploads/2015/03/B031-1115-brussels-washer-dark-purple.jpg');  padding-left: 120px;
   padding-top: 200px;
   padding-bottom: 200px;
   color: white;
   font-family: 'Oswald', sans-serif;
+  font-size: 150%;
   animation: fadein 2s;
   -moz-animation: fadein 2s;
   -webkit-animation: fadein 2s;
@@ -215,6 +215,7 @@ transition: all 1s ease; */
   padding-bottom: 50px;
   position: relative;
   animation: textImage 2s;
+  border-top: solid black;
 }
 .paragraphTitle
 {
@@ -222,33 +223,22 @@ transition: all 1s ease; */
   margin-right: auto;
   width: 75%;
   font-family: 'Roboto', sans-serif;
+  font-size: 200%;
 }
 .paragraphPassages
 {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
-  line-height: 1.5;
-  padding-top: 10px;
+  line-height: 2;
   font-family: 'Roboto Condensed', sans-serif;
+  font-size: 100%;
 }
 #p1
 {
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 2;
-}
-#p2
-{
-  grid-column-start: 1;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-#p3
-{
-  grid-column-start: 1;
-  grid-row-start: 3;
-  grid-row-end: 4;
 }
 #content
 {
@@ -269,11 +259,6 @@ transition: all 1s ease; */
   font-family: "Roboto Condensed", sans-serif;
   font-size: 80%;
   text-align: center;
-}
-#pollutionImage:hover
-{
-  opacity: 1;
-  top: -50px;
 }
 @keyframes fadein {
     from {
