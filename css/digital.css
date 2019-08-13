@@ -186,6 +186,41 @@ body{
   background-position: center;
 }
 
+<<<<<<< HEAD:css/digital.css
+=======
+.dropdown{
+  position: inline-block;
+}
+
+.dropdown-content{
+  display:none;
+  background-color: #0583C3;
+  min-width: 160px;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2) ;
+  z-index: 1000;
+  position:absolute;
+}
+
+/* links inside the dropdown */
+.dropdown-content a{
+  color: black;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+/* change color of dropdown links of hover */
+.dropdown-content a:hover{background-color: #ddd;}
+
+/* show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display:block;}
+
+/* chnage bkgrd color of dropdown button when dropdown content is shown */
+.dropdown:hover #searchBox {background-color: #0583C3;}
+
+
+>>>>>>> d371267563f2ba690a1a76d1b4cd7a3a4d20c82c:digital.css
 
 .header{
 display:grid;
@@ -194,7 +229,7 @@ padding: 70px;
 background: black;
 text-align:left;
 color: white;
-font-family: "Oswald",sans-serif;
+font-family: "Roboto Condensed",sans-serif;
 }
 
 /* .footer{
@@ -301,7 +336,7 @@ font-family: "Oswald",sans-serif;
 
 .art1{
     transition: 2s;
-    background: url("file:///Users/google/Desktop/Screenshot_20180824-232015_Instagram.png");
+    background: url("Screenshot_20180824-232015_Instagram.png");
     /*---Borders----*/
     border: 2px solid white;
     border-width: 2px;
@@ -315,7 +350,7 @@ font-family: "Oswald",sans-serif;
 }
 .art2{
     transition: 2s;
-    background: url("file:///Users/google/Desktop/Ariann%20cartoon%20complete.png");
+    background: url("Ariann cartoon complete.png");
     /*---Borders----*/
     border: 2px solid white;
     border-width: 2px;
@@ -329,7 +364,7 @@ font-family: "Oswald",sans-serif;
 }
 .art3{
     transition: 2s;
-    background: url("file:///Users/google/Desktop/GIF-190812_105449.gif");
+    background: url("GIF-190812_105449.gif");
     /*---Borders----*/
     border: 2px solid white;
     border-width: 2px;
@@ -343,7 +378,7 @@ font-family: "Oswald",sans-serif;
 }
 .art4{
     transition: 2s;
-    background: url("file:///Users/google/Desktop/GIF-190812_112026.gif");
+    background: url("GIF-190812_112026.gif");
     /*---Borders----*/
     border: 2px solid white;
     border-width: 2px;
@@ -374,16 +409,11 @@ font-family: "Oswald",sans-serif;
 /* same tag--- */
 
 .heading-image{
-
+  background-position: center;
   border-radius: 15px;
   background: url("https://media.giphy.com/media/b73wUq1jFLBTy/giphy.gif")
 
 }
-
-.heading-image{
-  background-position: center;
-}
-
 
   /* transition: 2s;
   color: #black;
