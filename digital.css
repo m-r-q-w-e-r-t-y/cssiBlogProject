@@ -159,7 +159,9 @@ body{
 .dropdown-content a:hover{background-color: #ddd;}
 
 /* show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display:block;}
+.dropdown:hover .dropdown-content {
+  width:25%;
+  display:block;}
 
 /* chnage bkgrd color of dropdown button when dropdown content is shown */
 .dropdown:hover #searchBox {background-color: #0583C3;}
@@ -173,7 +175,7 @@ padding: 70px;
 background: black;
 text-align:left;
 color: white;
-font-family: "Roboto Condensed",sans-serif;
+font-family: "Oswald",sans-serif;
 }
 
 /* .footer{
@@ -353,11 +355,16 @@ font-family: "Roboto Condensed",sans-serif;
 /* same tag--- */
 
 .heading-image{
-  background-position: center;
+
   border-radius: 15px;
   background: url("https://media.giphy.com/media/b73wUq1jFLBTy/giphy.gif")
 
 }
+
+.heading-image{
+  background-position: center;
+}
+
 
   /* transition: 2s;
   color: #black;
