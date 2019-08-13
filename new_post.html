@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Project</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="/static/js/index.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Blinker|Open+Sans|Oswald|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="titleBar"><!--THIS IS THE TITLE BAR---------------------------->
+        <section>
+            <button onclick="window.location='/';" id='webName'>CSSI Extension at Queens College</button>
+        </section>
+
+        <section>
+          <div class ="dropdown">
+             <button id="searchBox">Search</button>
+             <div class="dropdown-content">
+               <a href="/pollution">Pollution Page</a>
+               <a href="/digital">Digital Art Page</a>
+               <a href="/learning">Learning Page</a>
+             </div>
+           </div>
+        </section>
+
+        <section>
+            <button onclick="window.location='/about';" id='aboutButton'>About</button>
+        </section>
+
+        <section>
+            <button onclick="window.location='/photos';" id='photosButton'>Photos</button>
+        </section>
+   </div><!--THIS IS THE TITLE BAR-------------------------------------------->
+
+
+  <div class="sectionBar"><!--THIS IS THE SECTION BAR------------------------>
+        <h1>CSSI Students</h1>
+  </div><!--THIS IS THE SECTION BAR------------------------------------------>
+
+
+
+  <h1 class="instructions">Create your own blog post:</h1>
+  <section>
+    <!-- Form with POST method -->
+    <form method="post">
+      <div>
+        <!-- Input for "subject" -->
+        <label class=newPostHeaders for="subject">Subject:</label>
+        <input type="radio" class="radioChoice" name="subject" value="Environmental Science & Computer Science"><span class="radioChoice">Environmental Science & Computer Science</span><br>
+        <input type="radio" class="radioChoice" name="subject" value="Art & Computer Science"><span class="radioChoice">Art & Computer Science</span><br>
+        <input type="radio" class="radioChoice" name="subject" value="Education & Computer Science"><span class="radioChoice">Education & Computer Science</span><br>
+        <input type="radio" class="radioChoice" name="subject" value="Other"><span class="radioChoice">Other</span><br>
+      </div>
+      <div>
+        <!-- Input for "title" -->
+        <label class=newPostHeaders for="title" >Title:</label>
+        <input class=newPostInputs type="text" name="title">
+      </div>
+      <div>
+        <!-- Input for "content" -->
+        <label class=newPostHeaders for="content">Content:</label>
+        <textarea class=newPostInputs rows="10" cols="50" name="content">Enter text here...</textarea>
+      </div>
+      <div>
+        <!-- Input for "content" -->
+        <label class=newPostHeaders for"name">Name:</label>
+        <input class=newPostInputs type="text" name="name"
+      <!-- Submit button -->
+      <button class=newPostInputs type="submit">Submit</button>
+    </form>
+  </section>
+  <script src="/static/js/index.js"></script>
+</body>
+</html>

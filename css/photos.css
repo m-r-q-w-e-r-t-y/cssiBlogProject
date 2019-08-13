@@ -139,7 +139,61 @@ transition: all 1s ease; */
   font-family: 'Oswald', sans-serif;
   border-bottom: solid white;
   opacity: .9;
-
+}
+#searchBox:hover
+{
+  background-color: purple;
+}
+.dropdown{
+ position: inline-block;
+}
+.dropdown-content{
+ display:none;
+ opacity: .9;
+ background-color: #1b0221;
+ min-width: 160px;
+ box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2) ;
+ z-index: 1000;
+ position:absolute;
+}
+/* links inside the dropdown */
+.dropdown-content a{
+ font-family: 'Oswald', sans-serif;
+ color: white;
+ text-align: center;
+ background: #1b0221;
+ padding: 20px 16px;
+ text-decoration: none;
+ display: block;
+}
+/* change color of dropdown links of hover */
+.dropdown-content a:hover
+{
+  opacity: .9;
+  background-color: purple;
+}
+/* show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display:block;
+  width: 25%;
+}
+/* chnage bkgrd color of dropdown button when dropdown content is shown */
+.dropdown:hover #searchBox {background-color: purple;}
+.paragraphGrid
+{
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 3fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 100px;
+  padding-top: 100px;
+  margin-bottom: 200px;
+  margin-left: 450px;
+  margin-right: 450px;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
 }
 
 .paragraphGrid

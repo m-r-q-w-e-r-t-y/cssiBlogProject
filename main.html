@@ -2,7 +2,7 @@
 <head>
 
   <title>Blog Project</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Blinker|Open+Sans|Oswald|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
@@ -14,19 +14,26 @@
 <div id="topcontent">
     <div class="titleBar"><!--THIS IS THE TITLE BAR---------------------------->
           <section>
-              <button onclick="window.location='https://cssiextention.appspot.com/';" id='webName'>CSSI Extension at Queens College</button>
+              <button onclick="window.location='/';" id='webName'>CSSI Extension at Queens College</button>
           </section>
 
           <section>
-              <button id='searchBox'>Search</button>
+            <div class ="dropdown">
+               <button id="searchBox">Search</button>
+               <div class="dropdown-content">
+                 <a href="/pollution">Pollution Page</a>
+                 <a href="/digital">Digital Art Page</a>
+                 <a href="/learning">Learning Page</a>
+               </div>
+             </div>
           </section>
 
           <section>
-              <button onclick="window.location='https://cssiextention.appspot.com/about';" id='aboutButton'>About</button>
+              <button onclick="window.location='/about';" id='aboutButton'>About</button>
           </section>
 
           <section>
-              <button onclick="window.location='https://cssiextention.appspot.com/photos';" id='photosButton'>Photos</button>
+              <button onclick="window.location='/photos';" id='photosButton'>Photos</button>
           </section>
     </div><!--THIS IS THE TITLE BAR-------------------------------------------->
 
@@ -34,6 +41,29 @@
     <div class="sectionBar"><!--THIS IS THE SECTION BAR------------------------>
           <h1>CSSI Students</h1>
     </div><!--THIS IS THE SECTION BAR------------------------------------------>
+
+    <div class="paragraphs" id="p1">
+       <a href="/about">
+
+      <a href="/posts" id= "contribute">Contribute</a>
+      <section>
+        {% for blog_post in blog_posts %}
+          <div class="blog-post">
+            <hr>
+            <!-- <section class="paragraphTitle"> -->
+             <h2>{{blog_post.title}}</h2>
+             <h3>{{blog_post.subject}}</h3>
+             <h4>by:{{blog_post.name}}</h4>
+            <!-- </section>
+            <section class="paragraphPassages"> -->
+             <p>{{blog_post.date}}</p>
+             <p>{{blog_post.content}}</p>
+             <hr>
+             </a>
+             </div>
+              {% endfor %}
+              <div id="i1">
+              </div>
 
     <div class='paragraphGrid'><!--THIS IS FOR THE PARAGRAPHS/IMAGES----------->
       <div class="paragraphs" id="p1">
@@ -78,13 +108,13 @@
     </div>
 </div>
     <div id="content">
-      <a href="https://cssiextention.appspot.com/digital" id='digitalImage'>
+      <a href="/digital" id='digitalImage'>
       </a>
 
-      <a href="https://cssiextention.appspot.com/learning" id='learningImage'>
+      <a href="/learning" id='learningImage'>
       </a>
 
-      <a href="https://cssiextention.appspot.com/pollution" id = 'pollutionImage'>
+      <a href="/pollution" id = 'pollutionImage'>
       </a>
     </div>
 

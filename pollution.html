@@ -2,7 +2,7 @@
 <head>
 
   <title>Blog Project</title>
-  <link rel="stylesheet" type="text/css" href="pollution.css">
+  <link rel="stylesheet" type="text/css" href="css/pollution.css">
   <link href="https://fonts.googleapis.com/css?family=Blinker|Open+Sans|Oswald|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
@@ -13,26 +13,26 @@
 
     <div class="titleBar"><!--THIS IS THE TITLE BAR---------------------------->
           <section>
-              <button id='webName'>CSSI Extension</button>
+              <button onclick="window.location='/';"id='webName'>CSSI Extension</button>
           </section>
 
           <section>
               <div class="dropdown">
                 <button id='searchBox'>Search</button>
                 <div class="dropdown-content">
-                  <a id = "pollution" href="pollution.html">Polution Page</a>
-                  <a id = "digital" href="digital.html">Digital Art Page</a>
-                  <a id = "learning" href="learning.html">Learning Page</a>
+                  <a id = "pollution" href="/pollution">Polution Page</a>
+                  <a id = "digital" href="/digital">Digital Art Page</a>
+                  <a id = "learning" href="/learning">Learning Page</a>
                 </div>
               </div>
           </section>
 
           <section>
-              <button onclick="window.location='http://localhost:8080/about';" id='aboutButton'>About</button>
+              <button onclick="window.location='/about';" id='aboutButton'>About</button>
           </section>
 
           <section>
-              <button onclick="window.location='http://localhost:8080/photos';" id='photosButton'>Photos</button>
+              <button onclick="window.location='/photos';" id='photosButton'>Photos</button>
           </section>
     </div>
 
