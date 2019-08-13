@@ -21,7 +21,7 @@ class DigitalHandler(webapp2.RequestHandler):
 
 class LearnHandler(webapp2.RequestHandler):
   def get(self):
-    secondTemplate = jinja_current_directory.get_template('learn.html')
+    secondTemplate = jinja_current_directory.get_template('learning.html')
     self.response.write(secondTemplate.render())
 
 class PollutionHandler(webapp2.RequestHandler):
@@ -44,6 +44,6 @@ app = webapp2.WSGIApplication([
     ('/pollution', PollutionHandler),
     ('/about', AboutHandler),
     ('/photos', PhotosHandler),
-    ('/learn', LearnHandler),
+    ('/learning', LearnHandler),
     ('/digital', DigitalHandler)
 ], debug = True)

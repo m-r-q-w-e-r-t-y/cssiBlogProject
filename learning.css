@@ -5,9 +5,22 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Blinker', sans-serif;
 */
+/*
+div.class_name is how to edit a specific div
+*/
 
+<<<<<<< HEAD
 
 .titleBar{
+=======
+body{
+  background-color: #f24a41;
+  margin:auto;
+}
+
+.titleBar
+{
+>>>>>>> 3486295f73825101284be28733e3d3e1791985a7
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   top: 0px;
@@ -19,6 +32,7 @@ font-family: 'Blinker', sans-serif;
   z-index: 999;
 }
 
+<<<<<<< HEAD
 #mainHeader
 {
   margin-left: auto;
@@ -32,6 +46,10 @@ font-family: 'Blinker', sans-serif;
   grid-template-columns: repeat(3, auto);
 }
 #webName{
+=======
+#webName
+{
+>>>>>>> 3486295f73825101284be28733e3d3e1791985a7
   grid-area: pbutton;
   display: block;
   width: 100%;
@@ -99,6 +117,7 @@ body{
   margin: auto;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -293,6 +312,104 @@ h1{
 }
 
 
+=======
+.img {
+  background: url("");
+  background-size: cover;
+}
+
+.header{
+display:grid;
+grid-template-columns:1fr;
+padding: 70px;
+background: black;
+text-align: left;
+}
+
+.Passages{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  padding-top: 40px;
+  align:center;
+}
+
+
+.box_a{
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  background-color: #ab0000;
+  align: right;
+  /*---Borders----*/
+  border: 2px solid #ffffff;
+  border-width: 2px;
+  border-radius: 25px;
+  font-size: 25px;
+  transition: 2s;
+  margin-left:30px;
+  box-shadow: 10px 10px 5px #424242;
+}
+
+.box_b{
+  border: 2px solid #ffffff;
+  border-width: 2px;
+  border-radius: 25px;
+  padding:inherit;
+  align-content: center;
+  transition: 2s;
+  margin-right:30px;
+}
+
+#box_d{
+  border: 2px solid #ffffff;
+  background: url("https://thumbnails.texastribune.org/QnNsuhgnj88r00Bs5EKxNNGgLU0=/1250x838/smart/filters:quality(80)/https://static.texastribune.org/media/images/computerclassroom.jpg");
+  border-width: 2px;
+  border-radius: 25px;
+  padding:inherit;
+  transition: 2s;
+  margin-left:30px;
+}
+
+
+.box_c{
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  background-color: #ab0000;
+  align: right;
+  /*---Borders----*/
+  border: 2px solid #ffffff;
+  border-width: 2px;
+  border-radius: 25px;
+  font-size: 25px;
+  transition: 2s;
+  margin-right:30px;
+}
+
+
+h1{
+  color: white;
+  font-size: 35px;
+  font-family:"Roboto Condensed",sans-serif;
+}
+
+
+#test {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  position: absolute;
+  background: Blue;
+  border-radius: 40px;
+  margin-left:30px;
+  padding: 20px;
+  width: 625px;
+  height: 200px;
+  transition: 2s;
+  /* left: 0; */
+}
+
+>>>>>>> 3486295f73825101284be28733e3d3e1791985a7
 @keyframes fadein {
     from {
         opacity:0;
